@@ -1,7 +1,9 @@
 import React from "react"; 
+import Layout from "./components/Layout";
 export default function AboutPage() {
-  return <div>
+  return <Layout title='About DJ Events'>
       <h1>About</h1>
-  </div>;
+      
+  </Layout>;
 }
 
