@@ -22,8 +22,13 @@ export default function EventsPage({ events }) {
     </Layout>
   );
 }
+
+
+
+
 export async function getStaticProps() {
   const res = await fetch(`${API_URL}/api/events`);
+  console.log(res)
   const events = await res.json();
 
   return {
